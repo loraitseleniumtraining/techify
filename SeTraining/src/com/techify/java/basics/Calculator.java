@@ -25,6 +25,8 @@ public class Calculator {
 	public int multiNumbers(int a, int b){
 		int c = a*b;
 		return c;
+		
+				
 	}
 	
 }
