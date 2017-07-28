@@ -1,4 +1,4 @@
-package com.assignment.vasavi;
+package com.techify.vasavi.java.basics;
 
 
 public class EmployeeDetails {
