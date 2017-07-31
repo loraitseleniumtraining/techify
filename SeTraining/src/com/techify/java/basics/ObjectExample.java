@@ -1,5 +1,7 @@
 package com.techify.java.basics;
 
+import com.techify.java.oops.AccessModifiers2;
+
 public class ObjectExample {
 
 	int a =10; // global variable
@@ -8,6 +10,8 @@ public class ObjectExample {
 		ObjectExample oe = new ObjectExample(); //syntax
 		System.out.println(oe.a);
 		oe.addNumbers();
+		AccessModifiers2 am = new AccessModifiers2();
+		//System.out.println(am.);
 	}
 	
 	public void addNumbers(){
