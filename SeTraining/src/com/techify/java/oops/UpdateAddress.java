@@ -17,6 +17,12 @@ public class UpdateAddress extends TestEmployee {
 	public void printMyName(){
 		
 	}
+
+	@Override
+	public void testName() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }
