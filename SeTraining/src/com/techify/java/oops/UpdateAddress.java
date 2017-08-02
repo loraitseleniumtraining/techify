@@ -4,7 +4,8 @@ public class UpdateAddress extends TestEmployee {
 	
 	public static void main(String args[]){
 		TestEmployee te = new UpdateAddress(); // runtime poly
-		te.empName("Test");
+		te.empAdress();
+		te.testName();
 		UpdateAddress ua = new UpdateAddress();
 		
 	}
@@ -15,6 +16,12 @@ public class UpdateAddress extends TestEmployee {
 	}
 	
 	public void printMyName(){
+		
+	}
+
+	@Override
+	public void testName() {
+		// TODO Auto-generated method stub
 		
 	}
 	
