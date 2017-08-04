@@ -1,4 +1,4 @@
-package com.techify.raju.java.advanced;
+package com.techify.java.advanced;
 
 public class FinalExample {
 
