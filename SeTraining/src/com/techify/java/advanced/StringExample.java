@@ -46,9 +46,7 @@ public class StringExample {
 		int age = 26;
 		
 		System.out.println(firstName+"'s age is "+age);
-		
 		System.out.println(name.concat(firstName));
-		
 		if(name.contains("Kir"))
 			System.out.println("True");
 		else
