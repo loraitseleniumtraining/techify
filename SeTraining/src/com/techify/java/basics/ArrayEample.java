@@ -1,4 +1,4 @@
-package com.techify.java.advanced;
+package com.techify.java.basics;
 
 public class ArrayEample {
 
