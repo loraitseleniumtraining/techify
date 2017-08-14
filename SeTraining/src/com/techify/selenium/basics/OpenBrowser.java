@@ -14,8 +14,12 @@ public class OpenBrowser {
 	public void openApplication() {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\SeTraining\\src\\lib\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver(); // runtime poly
-		// link
-		driver.get("http://demo.nopcommerce.com/register");
+		// open app
+		driver.get("http://demo.nopcommerce.com");
+		
+		//click on the register link
+		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
+		
 		// selecting gender
 		driver.findElement(By.id("gender-male")).click();
 
