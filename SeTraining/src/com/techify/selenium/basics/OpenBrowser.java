@@ -2,7 +2,10 @@ package com.techify.selenium.basics;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class OpenBrowser {
 
@@ -16,9 +19,25 @@ public class OpenBrowser {
 		WebDriver driver = new FirefoxDriver(); // runtime poly
 		// open app
 		driver.get("http://demo.nopcommerce.com");
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
+		//mouse hover
+		WebElement computer = driver.findElement(By.xpath("//ul[@class='top-menu']//a[@href='/computers']"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(computer).build().perform();
+	
 		//click on the register link
 		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		
 		// selecting gender
 		driver.findElement(By.id("gender-male")).click();
@@ -28,6 +47,15 @@ public class OpenBrowser {
 
 		// entering last name
 		driver.findElement(By.name("LastName")).sendKeys("Kanta");
+		
+		//selecting from dropdown
+		Select selectDay = new Select(driver.findElement(By.name("DateOfBirthDay")));
+		
+		String firstOption = selectDay.getFirstSelectedOption().getText();
+		System.out.println(firstOption);
+		
+		selectDay.selectByVisibleText("17");
+		
 
 		// entering email
 		driver.findElement(By.id("Email")).sendKeys("manikanta@gmail.com");
