@@ -2,7 +2,9 @@ package com.techify.selenium.basics;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class OpenBrowser {
 
@@ -18,7 +20,29 @@ public class OpenBrowser {
 		driver.get("http://demo.nopcommerce.com");
 		
 		//click on the register link
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
+		//driver.findElement(By.xpath("//a[text()='Register']/parent::li/following-sibling::li[2]")).click();
+		
+		
+		WebElement computer = driver.findElement(By.xpath("//ul[@class='top-menu']//a[@href='/computers']"));
+				Actions actions = new Actions(driver);
+		     	actions.moveToElement(computer).build().perform();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		// selecting gender
 		driver.findElement(By.id("gender-male")).click();
