@@ -29,10 +29,9 @@ driver.findElement(By.xpath("//input[@name='RecoveryEmailAddress']")).sendKeys("
 
 
 
-Select selectMonth = new Select(driver.findElement(By.xpath("//div[@title='Birthday']")));
-String firstOption = selectMonth.getFirstSelectedOption().getText();
-System.out.println(firstOption);
-selectMonth.selectByValue("January");
+
 
 }
 }
+
+

@@ -25,8 +25,8 @@ public class Outlook {
 	     driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Praveen");
          driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("Varma");
          driver.findElement(By.xpath("//input[@id='MemberName']")).sendKeys("9989nani@outlook.com");
-	     driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("nani@1220");
-	     driver.findElement(By.xpath("//input[@name='RetypePassword']")).sendKeys("nani@1220");
+	     driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("Nani@1220");
+	     driver.findElement(By.xpath("//input[@name='RetypePassword']")).sendKeys("Nani@1220");
 	}
 	
 	
