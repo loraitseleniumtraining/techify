@@ -7,6 +7,7 @@ public class ReturnTypeExample {
 	public static void main(String[] args) {
 		ReturnTypeExample rte = new ReturnTypeExample();
 		rte.display().addNumbers(6, 11);
+		//rte.test().
 	}
 
 	public ReturnTypeExample display() {
@@ -20,6 +21,10 @@ public class ReturnTypeExample {
 		System.out.println(age);
 		int c= a+b;
 		System.out.println(c);
+	}
+	
+	public ReturnTypeExample test(){
+		return null;
 	}
 	
 }

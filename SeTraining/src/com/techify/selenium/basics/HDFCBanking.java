@@ -3,6 +3,8 @@ package com.techify.selenium.basics;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.techify.page.elements.HdfcPageElements;
 
@@ -40,6 +42,8 @@ public class HDFCBanking {
 			driver.switchTo().frame("login_page");*/
 			
 			//way 3
+			WebDriverWait wait = new WebDriverWait(driver, 15);
+			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(HdfcPageElements.frame));
 			driver.switchTo().frame(driver.findElement(HdfcPageElements.frame));
 
 			//enter text value and clear the text
