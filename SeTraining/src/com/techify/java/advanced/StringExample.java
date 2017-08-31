@@ -1,5 +1,7 @@
 package com.techify.java.advanced;
 
+import org.testng.annotations.Test;
+
 public class StringExample {
 
 	public static void main(String[] args) {
@@ -7,12 +9,14 @@ public class StringExample {
 		sm.testMethod();
 	}
 
+	@Test
 	public void testMethod(){
+		System.out.println("-----------------");
 		String name = "Kiran";
 		System.out.println(name);
 		System.out.println(name.length());
-		
-		String anotherName = "Kishan";
+		System.out.println("-----------------");
+		/*String anotherName = "Kishan";
 		
 		if(name == anotherName)
 			System.out.println("Both are equal");
@@ -50,7 +54,7 @@ public class StringExample {
 		if(name.contains("Kir"))
 			System.out.println("True");
 		else
-			System.out.println("false");
+			System.out.println("false");*/
 	}
 	
 }
