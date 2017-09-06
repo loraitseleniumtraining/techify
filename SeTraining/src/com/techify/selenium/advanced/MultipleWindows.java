@@ -26,7 +26,8 @@ public class MultipleWindows {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\SeTraining\\src\\lib\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver(); // runtime poly
 		// link
-		driver.get("https://www.makemytrip.com/");
+		driver.get("s");
+		
 		//implicit wait
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
