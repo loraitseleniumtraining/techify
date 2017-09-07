@@ -1,0 +1,67 @@
+https://mvnrepository.com/
+
+https://www.eclipse.org/downloads/? - Mars (.exe)
+
+http://www.seleniumhq.org/download/  - 3.5.0 (jar)
+
+GeckoDriver: (To work with firefox)
+https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-win64.zip.
+
+ChromeDriver: (To work with chrome)
+http://chromedriver.storage.googleapis.com/2.31/chromedriver_win32.zip
+
+InternetExplorer Driver: (To work with internet explorer)
+https://goo.gl/BbeFgE
+
+http://testng.org/doc/eclipse.html http://beust.com/eclipse (eclipse plugin -> help -> install new software)
+
+https://www.mozilla.org/en-US/firefox/new/ - 47.0.1 (Firebug 2.0.19 and Firepath  0.9.7.)
+
+http://jbehave.org/ ( eclipse plugin Help > Install New Software...
+Add the new site location http://jbehave.org/reference/eclipse/updates/)
+
+extent reports (maven repository or http://extentreports.com/docs/versions/2/java/)
+
+https://mvnrepository.com/artifact/com.relevantcodes/extentreports/2.41.2
+
+https://jenkins.io/download/ (Jenkins) 2.60.3
+
+Maven bin file -> https://maven.apache.org/download.cgi -> http://www-us.apache.org/dist/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.zip
+
+Env variable -> MAVEN_HOME -> C:\Users\Techifynow\Downloads\apache-maven-3.5.0-bin\apache-maven-3.5.0
+
+Path -> %MAVEN_HOME%\bin
+
+
+Add jenkins in maven:
+
+- http://localhost:8080/manage
+- Global Tool Configuration
+- Maven -> C:\Users\Techifynow\Downloads\apache-maven-3.5.0-bin\apache-maven-3.5.0
+- Restart jenkins
+
+
+JBehave project: https://github.com/pnakhat/jbehave-selenium
+
+Jenkins scheduler:
+
+If you want to schedule your build every 5 minutes, this will do the job : */5 * * * *
+If you want to schedule your build every day at 8h00, this will do the job : 0 8 * * *
+
+MINUTES Minutes in one hour (0-59)
+HOURS Hours in one day (0-23)
+DAYMONTH Day in a month (1-31)
+MONTH Month in a year (1-12)
+DAYWEEK Day of the week (0-7) where 0 and 7 are sunday
+
+
+Eclipse
+Selenium
+Firefox (firebug + firepath)
+Chrome + IE
+TestNG
+Maven
+Jenkins
+JBehave
+Git
+
